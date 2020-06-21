@@ -137,7 +137,35 @@ h6 {
 
 .nav-contakt {
   display: flex;
+  /*align-items: center;*/
   margin-left: auto;
+}
+
+.nav-contakt .nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-contakt .mail::before {
+  display: flex;
+  content: '';
+  background-image: url(../image/list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.nav-contakt .tell::before {
+  content: '';
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*Главный контент страницы*/
@@ -145,8 +173,21 @@ h6 {
 /*Секция герой*/
 
 .section-heroy {
-  margin-bottom: 94px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/heroy-img.jpg);
+  max-width: 1600px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
 }
 
 .section-heroy .hero-title {
@@ -195,6 +236,33 @@ h6 {
   width: calc((100% - 90px) / 4);
 }
 
+.section-items::before {
+  display: flex;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../image/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../image/clock.svg);
+}
+
+.vector::before {
+  background-image: url(../image/Vector.svg);
+}
+
+.astronaut::before {
+  background-image: url(../image/astronaut.svg);
+}
+
 .section-items:not(:last-child) {
   margin-right: 30px;
 }
@@ -202,6 +270,7 @@ h6 {
 .advantages {
   display: flex;
   padding-bottom: 94px;
+  padding-top: 112px;
   align-items: center;
 }
 
@@ -223,6 +292,7 @@ h6 {
 
 .section-title.invisible {
   display: none;
+  padding-top: 112px;
 }
 
 .section-subtitle {
