@@ -145,7 +145,19 @@ h6 {
   display: flex;
   align-items: center;
 }
+.nav-contakt .link-mail,
+.nav-contakt .link-tel {
+  display: inline-flex;
+  align-items: center;
+}
 
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+/*
 .nav-contakt .mail::before {
   display: flex;
   content: '';
@@ -167,6 +179,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
 
 /*Главный контент страницы*/
 
