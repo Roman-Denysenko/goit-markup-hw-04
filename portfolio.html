@@ -25,9 +25,7 @@
         </a>
 
         <ul class="nav-list">
-          <li class="nav-items">
-            <a href="./index.html" class="link">Студия</a>
-          </li>
+          <li class="nav-items"><a href="" class="link">Студия</a></li>
           <li class="nav-items">
             <a href="./portfolio.html" class="link current">Портфолио</a>
           </li>
@@ -36,12 +34,20 @@
 
         <ul class="nav-contakt">
           <li class="nav-items mail">
-            <a href="mailto:info@devstudio.com" class="link-mail"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link-mail">
+              <svg class="icon">
+                <use href="./image/sprite.svg#list"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="nav-items tell">
-            <a href="tel:+380961111111" class="link-tel">+380961111111</a>
+            <a href="tel:+380961111111" class="link-tel">
+              <svg class="icon">
+                <use href="./image/sprite.svg#phone"></use>
+              </svg>
+              +380961111111</a
+            >
           </li>
         </ul>
       </nav>
@@ -285,35 +291,56 @@
           <p class="social-text">Присоединяйтесь</p>
 
           <ul class="social-list">
-            <li class="socials insta">
+            <li class="insta">
               <a
                 href="https://www.instagram.com/"
                 class="social-link"
                 target="blank"
-                ><img src="./image/instagram.svg" alt="insta"
-              /></a>
-            </li>
-            <li class="socials twit">
-              <a href="https://twitter.com/" class="social-link" target="blank"
-                ><img src="./image/twitter.svg" alt="twit" />
+              >
+                <!--<img src="./image/instagram.svg" alt="insta" />-->
+                <div class="socials-footer">
+                  <svg width="20" height="20" class="logo-social-footer">
+                    <use href="./image/sprite.svg#instagram"></use>
+                  </svg>
+                </div>
               </a>
             </li>
-            <li class="socials face">
+            <li class="twit">
+              <a href="https://twitter.com/" class="social-link" target="blank">
+                <!--<img src="./image/twitter.svg" alt="twit" />-->
+                <div class="socials-footer">
+                  <svg width="20" height="20" class="logo-social-footer">
+                    <use href="./image/sprite.svg#twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="face">
               <a
                 href="https://www.facebook.com/"
                 class="social-link"
                 target="blank"
               >
-                <img src="./image/facebook.svg" alt="fk" />
+                <!-- <img src="./image/facebook.svg" alt="fk" />-->
+                <div class="socials-footer">
+                  <svg width="20" height="20" class="logo-social-footer">
+                    <use href="./image/sprite.svg#facebook"></use>
+                  </svg>
+                </div>
               </a>
             </li>
-            <li class="socials linked">
+            <li class="linked">
               <a
                 href="https://www.linkedin.com/"
                 class="social-link"
                 target="blank"
               >
-                <img src="./image/linkedin.svg" alt="in" />
+                <!--<img src="./image/linkedin.svg" alt="in" />-->
+                <div class="socials-footer">
+                  <svg width="20" height="20" class="logo-social-footer">
+                    <use href="./image/sprite.svg#linkedin"></use>
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>

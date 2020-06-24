@@ -234,7 +234,7 @@ h6 {
 /*Наши преимущества*/
 
 .section {
-  background-color: ##ffffff;
+  background-color: #ffffff;
 }
 
 .section-iteams-team {
@@ -243,6 +243,7 @@ h6 {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
 }
 
 .section-iteams-team:not(:last-child) {
@@ -385,6 +386,10 @@ h6 {
 }
 
 .work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
   margin: 0;
 
   background: rgba(47, 48, 58, 0.8);
@@ -416,10 +421,26 @@ h6 {
 }
 
 .team-social {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+.socials-item {
+  margin-top: 16px;
+}
+
+.socials-item:hover,
+.socials-item:focus {
+  background-color: var(--accent-color);
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* Клиенты*/
+.client {
+  padding-top: 94px;
+}
 
 .title-customers {
   margin-bottom: 50px;
@@ -428,6 +449,36 @@ h6 {
 .client-list {
   display: flex;
   padding-bottom: 94px;
+}
+
+.client-bgt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.logo-client {
+  fill: #afb1b8;
+}
+
+.client-bgt:hover,
+.client-bgt:focus {
+  border-color: var(--accent-color);
+}
+
+.logo-client:hover,
+.logo-client:focus {
+  fill: var(--accent-color);
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .client-items:not(:last-child) {
@@ -442,7 +493,7 @@ h6 {
   display: flex;
 }
 
-.socials {
+.socials-footer {
   display: flex;
   width: 44px;
   height: 44px;
@@ -452,11 +503,18 @@ h6 {
   align-items: center;
   padding: 12px;
 }
+.socials-footer:hover,
+.socials-footer:focus {
+  background-color: var(--accent-color);
+}
 
-.socials:not(:last-child) {
+.socials-footer:not(:last-child) {
   margin-right: 10px;
 }
 
+.logo-social-footer {
+  fill: var(--third-color-text);
+}
 /*.footer .insta {
   background-image: url(../image/instagram.svg);
   background-repeat: no-repeat;
@@ -480,16 +538,37 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }*/
-
+/*
 .footer .insta:hover,
 .footer .twit:hover,
 .footer .face:hover,
 .footer .linked:hover {
   background-color: var(--accent-color);
 }
+*/
+.team-social .socials-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.social-list .social-link {
-  color: var(--third-color-text);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.social-link {
+  display: flex;
+}
+
+.socials-item .logo-social {
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.logo-social:hover,
+.logo-social:focus {
+  fill: var(--third-color-text);
 }
 
 .social-link:hover,
